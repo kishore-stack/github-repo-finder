@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Repository Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>GitHub Repository Finder</h1>
+            <p>Search for repositories on GitHub</p>
+        </header>
+
+        <main class="main">
+            <form class="search-form" id="searchForm">
+                <div class="input-group">
+                    <input type="text" id="searchInput" placeholder="Enter keyword to search GitHub repositories">
+                    <button type="submit">Search</button>
+                </div>
+            </form>
+
+            <div id="results">
+                <h2 id="resultsTitle"></h2>
+                <div id="repoList" class="repo-list"></div>
+                <div id="pagination" class="pagination"></div>
+            </div>
+
+            <!-- Sample repositories that will show if no search has been performed -->
+            <div id="sampleRepos" class="sample-repos">
+                <h2>Popular Todo App Repositories</h2>
+                <div class="repo-list">
+                    <div class="repo-card">
+                        <h3>
+                            <a href="https://github.com/facebook/react" target="_blank" rel="noopener noreferrer">
+                                facebook/react
+                            </a>
+                        </h3>
+                        <p>A declarative, efficient, and flexible JavaScript library for building user interfaces.</p>
+                        <div class="repo-meta">
+                            <span>⭐ 215k</span>
+                            <span>🍴 45.2k</span>
+                            <span>📝 JavaScript</span>
+                            <span>👀 6.5k</span>
+                        </div>
+                    </div>
+                    <div class="repo-card">
+                        <h3>
+                            <a href="https://github.com/vuejs/vue" target="_blank" rel="noopener noreferrer">
+                                vuejs/vue
+                            </a>
+                        </h3>
+                        <p>Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web.</p>
+                        <div class="repo-meta">
+                            <span>⭐ 205k</span>
+                            <span>🍴 34.1k</span>
+                            <span>📝 JavaScript</span>
+                            <span>👀 6.2k</span>
+                        </div>
+                    </div>
+                    <div class="repo-card">
+                        <h3>
+                            <a href="https://github.com/angular/angular" target="_blank" rel="noopener noreferrer">
+                                angular/angular
+                            </a>
+                        </h3>
+                        <p>The modern web developer's platform. A platform for building mobile and desktop web applications.</p>
+                        <div class="repo-meta">
+                            <span>⭐ 90.5k</span>
+                            <span>🍴 24.3k</span>
+                            <span>📝 TypeScript</span>
+                            <span>👀 4.8k</span>
+                        </div>
+                    </div>
+                    <div class="repo-card">
+                        <h3>
+                            <a href="https://github.com/tastejs/todomvc" target="_blank" rel="noopener noreferrer">
+                                tastejs/todomvc
+                            </a>
+                        </h3>
+                        <p>A helping hand for selecting a JavaScript framework. Helping you select an MV* framework.</p>
+                        <div class="repo-meta">
+                            <span>⭐ 28.5k</span>
+                            <span>🍴 13.9k</span>
+                            <span>📝 JavaScript</span>
+                            <span>👀 1.2k</span>
+                        </div>
+                    </div>
+                    <div class="repo-card">
+                        <h3>
+                            <a href="https://github.com/typicode/json-server" target="_blank" rel="noopener noreferrer">
+                                typicode/json-server
+                            </a>
+                        </h3>
+                        <p>Get a full fake REST API with zero coding in less than 30 seconds (seriously).</p>
+                        <div class="repo-meta">
+                            <span>⭐ 68.5k</span>
+                            <span>🍴 6.7k</span>
+                            <span>📝 JavaScript</span>
+                            <span>👀 1.8k</span>
+                        </div>
+                    </div>
+                    <div class="repo-card">
+                        <h3>
+                            <a href="https://github.com/axios/axios" target="_blank" rel="noopener noreferrer">
+                                axios/axios
+                            </a>
+                        </h3>
+                        <p>Promise based HTTP client for the browser and node.js.</p>
+                        <div class="repo-meta">
+                            <span>⭐ 102k</span>
+                            <span>🍴 10.6k</span>
+                            <span>📝 JavaScript</span>
+                            <span>👀 3.2k</span>
+                        </div>
+                    </div>
+                    <div class="repo-card">
+                        <h3>
+                            <a href="https://github.com/nodejs/node" target="_blank" rel="noopener noreferrer">
+                                nodejs/node
+                            </a>
+                        </h3>
+                        <p>Node.js JavaScript runtime. Designed for building scalable network applications.</p>
+                        <div class="repo-meta">
+                            <span>⭐ 98.5k</span>
+                            <span>🍴 26.8k</span>
+                            <span>📝 JavaScript</span>
+                            <span>👀 5.2k</span>
+                        </div>
+                    </div>
+                    <div class="repo-card">
+                        <h3>
+                            <a href="https://github.com/expressjs/express" target="_blank" rel="noopener noreferrer">
+                                expressjs/express
+                            </a>
+                        </h3>
+                        <p>Fast, unopinionated, minimalist web framework for node.</p>
+                        <div class="repo-meta">
+                            <span>⭐ 62.5k</span>
+                            <span>🍴 11.2k</span>
+                            <span>📝 JavaScript</span>
+                            <span>👀 2.8k</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
